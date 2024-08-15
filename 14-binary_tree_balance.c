@@ -22,10 +22,13 @@ int binary_tree_balance(const binary_tree_t *tree)
 
 	return (left - right);
 
-	
+
 }
 /**
- * binary_tree_height - helper function to determine height of 
+ * binary_tree_height - helper function to determine height of
+ *
+ * @tree: pointer to the root node
+ * Return: the hieght of the sub tree
  */
 size_t binary_tree_height(const binary_tree_t *tree)
 {
