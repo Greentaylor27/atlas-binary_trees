@@ -7,12 +7,21 @@
 
 void binary_tree_delete(binary_tree_t *tree)
 {
-	if (tree == NULL)
+	binary_tree_t *current = tree;
+
+	if (current == NULL)
 		return;
 
-	binary_tree_delete(tree->left);
-	binary_tree_delete(tree->right);
+	current->left = NULL;
+	current->right = NULL;
+	current->parent = NULL;
+	current = NULL;
 
-	free(tree);
+	tree->left = NULL;
+	tree->right = NULL;
+	tree->parent = NULL;
+	tree = NULL;
+
+	free(current);
 }
 
