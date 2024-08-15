@@ -2,7 +2,7 @@
 
 /**
  * binary_tree_inorder - used to traverse a binary tree using inorder alogrithm
- * 
+ *
  * @tree: a pointer to the root node of a tree to traverse
  * @func: a pointer to a function call for each node.
  */
