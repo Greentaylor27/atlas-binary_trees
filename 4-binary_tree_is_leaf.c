@@ -5,7 +5,7 @@
  *
  * @node: the node you are searching for
  *
- * return: 0 on success. 1 on failure
+ * Return: 0 on success. 1 on failure
  */
 
 int binary_tree_is_leaf(const binary_tree_t *node)
