@@ -14,10 +14,10 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 		return (NULL);
 	
 	sibling = node->parent->left;
-	if (!sibling)
-		return (NULL);
+	if (sibling != NULL)
+		return (sibling);
 	sibling = node->parent->right;
-	if (!sibling)
-		return (NULL);
-	return (sibling);
+	if (sibling != NULL)
+		return (sibling);
+	return (NULL);
 }
