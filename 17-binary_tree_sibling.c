@@ -11,7 +11,7 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 	binary_tree_t *Rsibling = node->parent->right;
 	binary_tree_t *Lsibling = node->parent->left;
 
-	if (node == NULL || (node->parent) == NULL)
+	if (node == NULL || node->parent == NULL)
 		return (NULL);
 	
 	if (Lsibling != NULL && Lsibling == node)
