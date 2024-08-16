@@ -14,9 +14,9 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 	if (node == NULL || (node->parent) == NULL)
 		return (NULL);
 	
-	if (Lsibling != NULL)
+	if (Lsibling != NULL && Lsibling == node)
 		return (Rsibling);
-	if (Rsibling != NULL)
+	if (Rsibling != NULL && Rsibling == node)
 		return (Lsibling);
 	return (NULL);
 }
